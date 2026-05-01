@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %} Dashboard {% endblock %}
+
+{% block conteudo %}
+
+<div class="row g-4">
+
+    <div class="col-md-3">
+        <div class="card text-bg-primary">
+            <div class="card-body">
+                <h5 class="card-title">Faturamento</h5>
+                <p class="card-text fs-4">R$ 1.200</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card text-bg-success">
+            <div class="card-body">
+                <h5 class="card-title">Entradas</h5>
+                <p class="card-text fs-4">35</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card text-bg-warning">
+            <div class="card-body">
+                <h5 class="card-title">Saídas</h5>
+                <p class="card-text fs-4">28</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card text-bg-danger">
+            <div class="card-body">
+                <h5 class="card-title">Vagas Ocupadas</h5>
+                <p class="card-text fs-4">12</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+{% endblock %}
