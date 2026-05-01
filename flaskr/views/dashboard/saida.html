@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %} Saída {% endblock %}
+
+{% block conteudo %}
+<div class="card shadow-sm">
+    <div class="card-header bg-dark text-white">
+        <h5 class="mb-0">Recibo</h5>
+    </div>
+
+    <div class="card-body">
+
+        <div class="row gy-3">
+            <div class="col-md-6">
+                <p class="text-muted m-0">Placa</p>
+                <p class="fw-bold">ABC-1234</p>
+            </div>
+
+            <div class="col-md-6">
+                <p class="text-muted m-0">Modelo / Cor</p>
+                <p class="fw-bold">Gol / Preto</p>
+            </div>
+
+            <div class="col-md-6">
+                <p class="text-muted m-0">Entrada</p>
+                <p>01/05/2026 08:30</p>
+            </div>
+
+            <div class="col-md-6">
+                <p class="text-muted m-0">Saída</p>
+                <p>01/05/2026 11:45</p>
+            </div>
+
+            <div class="col-md-6">
+                <p class="text-muted m-0">Permanência</p>
+                <p>3h 15min</p>
+            </div>
+        </div>
+
+        <!-- Total destacado -->
+        <div
+            class="bg-success-subtle mt-4 p-3 d-flex flex-column text-center">
+            <span class="fw-bold fs-4">Total a Pagar</span>
+            <span class="fw-bold fs-2 text-success">R$ 25,00</span>
+        </div>
+
+    </div>
+
+    <div class="card-footer d-flex justify-content-between">
+        <button class="btn btn-success">
+            Liberar
+        </button>
+        <button class="btn btn-primary">
+            Imprimir Recibo
+        </button>
+    </div>
+</div>
+{% endblock %}
